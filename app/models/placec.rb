@@ -1,0 +1,2 @@
+class Placec < ApplicationRecord
+end
