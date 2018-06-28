@@ -3,44 +3,101 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
 
 .booyah-box {
-  -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
-  -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
-  box-shadow: 1px 1px 2px 0 #d0d0d0;
+  -webkit-box-shadow:1px 1px 2px 0 #d0d0d0;
+  -moz-box-shadow:1px 1px 2px 0 #d0d0d0;
+  box-shadow:1px 1px 2px 0 #d0d0d0;
   background: #fff;
-  border: 1px solid #ccc;
-  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  border:1px solid #ccc;
+  border-color:#e4e4e4 #bebebd #bebebd #e4e4e4;
   margin-top: 10px;
   margin-bottom: 15px;
   padding: 20px;
+
 }
-h1, h2, h3, h4, h5, h6 {
+
+h1,h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
+  border: none;
 }
+html {
+  border: none;
+}
+
+
 body {
   background: image_url('food.png');
-  font-family:  Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+  font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
 .navbar {
   background: image_url('black_twill.png');
-  box-shadow: 0px 1px 3px #2a2a2a;
+  box-shadow: 2px 2px 3px #121212;
+  border: none;
+  border-bottom: 1px solid black;
+  margin-bottom: 0;
 }
-.navbar-inverse .navbar-brand {
-  color: #E3E85A;
-  font-family: "Open Sans Condensed", sans-serif;
+
+.navbar-light .navbar-brand {
+  color: #0275B3;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 26px;
+  font-weight: bold;
+  border: none;
 }
-.invalid-feedback {
-  color: #ff3333;
-  background-color: #FFEEEE;
-  border-radius: 3px;
-  padding: 2px 8px 2px 8px;
+
+.nav-link {
+  border: none;
 }
+
+// Pagination SCSS //
+.pagination {
+  margin: auto;
+}
+
+.digg_pagination {
+  background: white;
+  cursor: default;
+  margin: auto;
+}
+
+a, span, em {
+    padding: 0.2em 0.5em;
+    display: block;
+    float: left;
+    margin-right: 1px;
+  }
+
+.disabled {
+    color: #999999;
+    border: 1px solid #dddddd;
+  }
+
+.current {
+    font-style: normal;
+    font-weight: bold;
+    background: #2e6ab1;
+    color: white;
+    border: 1px solid #2e6ab1;
+  }
+
+a {
+    text-decoration: none;
+    color: #105cb6;
+    border: 1px solid #9aafe5;
+    color: #000033;
+    border-color: #000033;
+}
+
+// Map //
 #map {
   height: 300px;
 }
+
 .clear {
-  clear: both;
+    clear: both;
 }
+
 blockquote {
   background: #f9f9f9;
   border-left: 10px solid #ccc;

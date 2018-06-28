@@ -61,8 +61,8 @@
 <!-- End Booyah Box -->
 <div class="uploaded-items img">
   <% @place.photos.each do |photo| %>
-    <span class="uploaded-photos"><%= image_tag photo.picture %></span>
-    <span class="uploaded-caption"><%= photo.caption %></span>
+   <%= image_tag photo.picture %>
+   <%= photo.caption %>
   <% end %>
 </div>
 
